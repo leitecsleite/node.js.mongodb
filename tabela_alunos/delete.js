@@ -11,7 +11,7 @@ MongoClient.connect( servidor, function(err, db){
 
     var colecao = db.collection("Alunos");
 
-    var filtro = { status: "PROVADA"};
+    var filtro = { status: "REPROVADO"};
 
     colecao.deleteMany(filtro, function(erro, resultado){
         if(erro)
